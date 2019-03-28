@@ -1,0 +1,14 @@
+{
+  "name": "Hello",
+  "version": "0.0.1",
+  "description": "",
+  "cordova": {
+    "id": "com.example.hello",
+    "platforms": []
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "elkana",
+  "license": "ISC"
+}
