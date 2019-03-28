@@ -1,7 +1,28 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="com.example.hello" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<plugin id="com.example.hello" version="0.0.1" 
+    xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+    xmlns:android="http://schemas.android.com/apk/res/android">
     <name>Hello</name>
+
     <js-module name="Hello" src="www/Hello.js">
         <clobbers target="cordova.plugins.Hello" />
     </js-module>
+
+    <platform name="android">
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.INTERNET" />
+            <uses-permission android:name="android.permission.CAMERA" />
+        </config-file>
+
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="Hello">
+                <param name="android-package" value="com.example.hello.Hello" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+        <source-file src="src/android/Hello.java" target-dir="src/com/example/hello/Hello" />
+
+        <framework src="src/android/build.gradle" type="gradleReference" custom="true"/>
+    </platform>
+
 </plugin>
