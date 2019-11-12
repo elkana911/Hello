@@ -7,7 +7,7 @@ Hello.prototype.show = function (message, duration, successCallback, errorCallba
     var obj = {};
     obj.message = message;
     obj.duration = duration;
-    cordova.exec(successCallback, errorCallback, 'Hello', 'show', [obj]);
+    cordova.exec(successCallback, errorCallback, 'MyHello', 'show', [obj]);
 }
 
 Hello.install = function() {
