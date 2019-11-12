@@ -39,9 +39,10 @@ public class Hello extends CordovaPlugin {
             // Display toast
             toast.show();
             // Send a positive result to the callbackContext
-            PluginResult pluginResult = new PluginResult(PluginResult.Status.OK, "balik beres deh");
-            pluginResult.setKeepCallback(true);
-            callbackContext.sendPluginResult(pluginResult);
+            //PluginResult pluginResult = new PluginResult(PluginResult.Status.OK, "balik beres deh");
+            //pluginResult.setKeepCallback(true);
+            //callbackContext.sendPluginResult(pluginResult);
+            callbackContext.success("balik beress dah");
             return true;
         }
         
