@@ -5,6 +5,7 @@ repositories {
 }
 
 dependencies {
+//Outsystems P11.6.6 ga bisa androidx
   // compile 'androidx.appcompat:appcompat:1.0.2'
   //  compile 'androidx.constraintlayout:constraintlayout:1.1.3'
   //  compile 'androidx.lifecycle:lifecycle-extensions:2.1.0-alpha03'
