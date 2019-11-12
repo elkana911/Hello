@@ -23,6 +23,7 @@ public class Hello extends CordovaPlugin {
             return true;
         }else
         if (action.equals("show")) {
+            // https://www.outsystems.com/blog/posts/how-to-create-a-cordova-plugin-from-scratch/
             String message;
             String duration;
             try {
