@@ -35,8 +35,7 @@ public class Hello extends CordovaPlugin {
                 return false;
             }
             // Create the toast
-            Toast toast = Toast.makeText(cordova.getActivity(), message,
-                DURATION_LONG.equals(duration) ? Toast.LENGTH_LONG : Toast.LENGTH_SHORT);
+            Toast toast = Toast.makeText(cordova.getActivity(), message, Toast.LENGTH_LONG);
             // Display toast
             toast.show();
             // Send a positive result to the callbackContext
