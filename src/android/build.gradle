@@ -5,6 +5,8 @@ repositories {
 }
 
 dependencies {
+compile 'com.android.support:appcompat-v7:26.1.0'
+
 //Outsystems P11.6.6 ga bisa androidx
   // compile 'androidx.appcompat:appcompat:1.0.2'
   //  compile 'androidx.constraintlayout:constraintlayout:1.1.3'
