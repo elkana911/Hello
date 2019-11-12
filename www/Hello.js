@@ -14,8 +14,8 @@ Hello.install = function() {
     if (!window.plugins) {
         window.plugins = {};
     }
-    window.plugins.hello = new Hello();
-    return window.plugins.hello;
+    window.plugins.helloToast = new Hello();
+    return window.plugins.helloToast;
 }
 cordova.addConstructor(Hello.install);
 
