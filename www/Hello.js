@@ -5,5 +5,9 @@ exports.coolMethod = function (arg0, success, error) {
 };
 
 exports.toast = function (arg0, success, error) {
-    exec(success, error, 'Hello', 'show', [arg0]);
+    var obj = {};
+    obj.message = arg0;
+    // obj.duration = duration;
+    
+    exec(success, error, 'Hello', 'show', [obj]);
 };
